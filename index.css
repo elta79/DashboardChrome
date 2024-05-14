@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.893);
+    text-shadow: 1px 1px 2px gray;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    font-family: "Tilt Neon", sans-serif;
+    padding: 25px;
+}
+
+.upper-container{
+    display:flex;
+    justify-content: space-between;
+}
+#weather-container{
+    display: flex;
+    flex-direction: column; 
+    text-align: right;
+    font-size: 2rem;
+    padding: .5rem;
+}
+#temp-container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#time{
+    /* animation: flicker 2.5s infinite alternate;  */
+    text-align: center;
+    font-size:8rem;
+    color: #fff;
+    text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #ff00e1,
+        0 0 42px #ff00e1,
+        0 0 92px #ff00e1,
+        0 0 102px #ff00e1,
+        0 0 151px #ff00e1;
+}
+
+.lower-container{
+    display:flex;
+    font-size: 1.75rem;
+}
+
+#facts{
+    margin:0 auto;
+    font-size: 2rem;
+    text-wrap: wrap;
+    text-align: center;    
+}
+
+#riddle-container{
+    display:flex;    
+    justify-content: center;
+    align-items: center; 
+    width:100%;
+    
+}
+#riddle{    
+    text-wrap: wrap;
+    max-width: 80%;    
+}
+#riddle-button{     
+    margin-left: 25px;
+    padding: 10px;
+    background-color: rgb(15, 15, 15);
+    font-size: 1.5rem;
+}
+
+#cat-animation{
+    background: transparent;
+    width: 300px;
+    height: 300px;
+}
+
+/* @keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100%{
+        text-shadow: 
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #ff00e1,
+        0 0 80px #ff00e1,
+        0 0 90px #ff00e1,
+        0 0 100px #ff00e1,
+        0 0 150px #ff00e1;
+    }
+    20%, 24%, 55%{
+        text-shadow: none;
+    }
+    
+} */
+
+@media only screen and (max-width: 600px) {
+    #riddle-container{
+        flex-direction: column;
+    }
+    #riddle{
+        padding-bottom: 20px;
+    }
+    #cat-animation{
+        width: 150px;
+        height: 150px;
+    }
+}
