@@ -4,7 +4,7 @@ const weatherAPIKey = '1d473472092c5f97528301c4332a0cd4'
 const apiNinjaKey = 'vTEw6WgGoJY0qsHM33LbEw==P5ndNB9hEGrcTX3v'
 
 
-fetch("https://api.unsplash.com/photos/random?client_id=Kwlcl4AbqcwhEZlBh7Q-c40_5LraCrubdQid_jWQl64&orientation=landscape&query=cats")
+fetch("https://api.unsplash.com/photos/random?client_id=Kwlcl4AbqcwhEZlBh7Q-c40_5LraCrubdQid_jWQl64&orientation=landscape&query=nature")
     .then(res => {
         if(!res.ok){
             throw new Error('Network response not okay - unsplash api')
